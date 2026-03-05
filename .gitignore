@@ -1,0 +1,78 @@
+# Virtual environments (BESAR!)
+awal/geocalib_env/
+mediapipe_pipeline/mediapipe_env/
+__pycache__/
+*.pyc
+
+# File data besar
+*.npy
+*.npz
+*.bin
+*.caffemodel
+*.pkl
+*.h5
+*.zip
+
+# Folder 3D poses (ratusan MB)
+awal/3d_poses/
+awal/3d_poses_global/
+awal/frames/
+awal/frames_test/
+awal/json/
+mediapipe_pipeline/json/
+mediapipe_pipeline/3d_poses/
+mediapipe_pipeline/3d_poses_global/
+
+# OpenPose build & models (ratusan MB)
+openpose/build/
+openpose/models/
+openpose/checkpoint/
+
+# VideoPose3D checkpoint & output
+VideoPose3D/checkpoint/
+VideoPose3D/temp_animation_frames/
+VideoPose3D/images/
+VideoPose3D/__pycache__/
+
+# Video dan gambar
+*.mp4
+*.avi
+*.jpg
+*.jpeg
+*.png
+
+# Dataset
+URFD/
+URFD.zip
+frames/
+processed_poses/
+RFDS/
+RFDS.zip
+json/
+
+# Log
+*.log
+
+# JSON output besar
+awal/*.json
+VideoPose3D/*.json
+
+# Script animasi (bukan core pipeline)
+VideoPose3D/anim*.py
+VideoPose3D/animate_*.py
+VideoPose3D/animate_*.sh
+VideoPose3D/run_*.sh
+
+# OpenPose source code (bukan buatan sendiri)
+openpose/3rdparty/
+openpose/build/
+openpose/cmake/
+openpose/doc/
+openpose/examples/
+openpose/include/
+openpose/scripts/
+openpose/src/
+
+# Repo pihak ketiga (bukan buatan sendiri)
+VideoPose3D/
+openpose/
