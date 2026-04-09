@@ -1,0 +1,25 @@
+=== HASIL PERBANDINGAN SYNTHETIC IMU vs REAL IMU ===
+Tanggal: April 2026
+
+1. Real IMU URFD (sensor fisik, n=39 ADL, 30 Fall):
+   ADL  peak: mean=26.17 m/s2
+   FALL peak: mean=83.52 m/s2
+   Ratio max FALL/ADL = 3.19x
+
+2. OpenPose Synthetic IMU (n=40 ADL, 30 Fall, cam0):
+   ADL  mean: 310.2 pixel/s2
+   FALL mean: 541.4 pixel/s2
+   Ratio mean FALL/ADL = 1.75x
+   Ratio max  FALL/ADL = 1.27x
+
+3. MediaPipe Synthetic IMU (n=40 ADL, 30 Fall, cam0):
+   ADL  mean: 403.7 pixel/s2
+   FALL mean: 1347.2 pixel/s2
+   Ratio mean FALL/ADL = 3.34x
+   Ratio max  FALL/ADL = 3.18x
+
+KESIMPULAN:
+- MediaPipe menghasilkan ratio max 3.18x, hampir identik dengan real IMU (3.19x)
+- OpenPose menghasilkan ratio max 1.27x, masih jauh dari real IMU
+- MediaPipe JAUH lebih baik dari OpenPose untuk synthetic IMU fall detection
+- MediaPipe detection rate 100% vs OpenPose 84.2%

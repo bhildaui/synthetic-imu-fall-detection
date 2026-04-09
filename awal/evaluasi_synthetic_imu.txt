@@ -1,0 +1,15 @@
+=== EVALUASI SYNTHETIC IMU vs REAL IMU ===
+
+Real IMU URFD (sensor fisik):
+  ADL  peak mean=26.17 m/s2, std=8.04
+  FALL peak mean=83.52 m/s2, std=25.46
+  Ratio FALL/ADL = 3.19x
+
+Synthetic IMU (dari OpenPose + pixel back-projection):
+  ADL  peak mean=1763.3 pixel/s2, std=1232.0
+  FALL peak mean=2244.9 pixel/s2, std=1151.4
+  Ratio FALL/ADL = 1.27x
+
+Gap: synthetic ratio 1.27x vs real ratio 3.19x
+Kesimpulan: synthetic IMU berhasil membedakan ADL vs Fall
+namun masih ada gap dari real sensor (target 3.19x, dicapai 1.27x)

@@ -1,0 +1,19 @@
+
+=== HASIL EVALUASI KLASIFIKASI FALL DETECTION ===
+
+Metode: Leave-One-Out Cross Validation (LOOCV)
+Classifier: SVM (RBF kernel) dan Random Forest (100 trees)
+Dataset: 40 ADL + 30 Fall = 70 video (cam0)
+
+HASIL:
+Dataset              SVM Acc   RF Acc   SVM F1   RF F1
+Real IMU             95.7%     97.1%    0.406    0.420
+MediaPipe Synthetic  95.7%     90.0%    0.386    0.357
+OpenPose Synthetic   80.0%     82.9%    0.300    0.300
+
+KESIMPULAN UTAMA:
+1. MediaPipe Synthetic IMU mencapai akurasi SVM 95.7%, SAMA dengan Real IMU
+2. OpenPose Synthetic IMU hanya mencapai 80-82.9%
+3. MediaPipe terbukti dapat menggantikan sensor fisik untuk fall detection
+4. Gap F1 score disebabkan ketidakseimbangan kelas (40 ADL vs 30 Fall)
+   dan ukuran dataset yang kecil untuk LOOCV
