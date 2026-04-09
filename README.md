@@ -4,7 +4,6 @@ Adapting the IMUTube framework to generate synthetic accelerometer (IMU) data fr
 for fall detection, without requiring physical sensors.
 
 **Dataset:** UR Fall Detection Dataset (URFD) — Kwolek & Kepski, 2014  
-**Target Publication:** Frontiers Journal
 
 ---
 
